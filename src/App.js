@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import MercuryOverview from './Pages/Mercury/MercuryOverview';
+import MercuryStructure from './Pages/Mercury/MercuryStructure';
+import MercurySurface from './Pages/Mercury/MercurySurface';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<MercuryOverview />} />
+        <Route path='/mercuryStructure' element={<MercuryStructure />} />
+        <Route path='/mercurySurface' element={<MercurySurface />} />
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
