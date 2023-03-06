@@ -17,6 +17,7 @@
         height: 5.3125rem;
         padding: 0rem 2rem;
         border-bottom: 1px solid #97979783;
+        
     }
     
     .logo{
@@ -72,7 +73,7 @@
         flex-direction: column;
         width: 41.5625rem;
         list-style: none;
-        height: 80vh;
+        height: 110vh;
         width: 100vw;
         background-color: var(--bg-color);
         top: 5.3125rem;
@@ -90,7 +91,7 @@
         flex-direction: column;
         width: 41.5625rem;
         list-style: none;
-        height: 80vh;
+        height: 110vh;
         width: 100vw;
         background-color: var(--bg-color);
         top: 5.3125rem;

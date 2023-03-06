@@ -70,7 +70,7 @@ const Navbar = () => {
                 <img src={chevronIcon} alt="" className="chevron" />
             </li>
         </ul>
-        <button onClick={toogleHamburger} className="burger_btn">
+        <button onClick={ toogleHamburger}className="burger_btn">
             <img src={burgerImg} alt="Mobile menu icon" className="burger_img" />
         </button>
     </nav>
