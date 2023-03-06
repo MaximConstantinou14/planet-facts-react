@@ -13,16 +13,16 @@ const Mercury = () => {
       <Navbar />
 
       <ul className="pagination_mobile_overview">
-        <li className="pagination_item_mobile_overview">
-            <button autofocus className="overview_btn_mobile_overview">overview</button>
+        <li className="pagination_item_mobile_overview_mercury">
+            <button autofocus className="overview_btn_mobile_overview_mercury">overview</button>
         </li>
         <li className="pagination_item_mobile_overview">
-            <button className="structure_btn_mobile_overview">
+            <button className="structure_btn_mobile_overview_mercury">
               <Link className="overview_link_to_strucure" to='/mercuryStructure'>structure</Link>
             </button>
         </li>
         <li className="pagination_item_mobile_overview">
-            <button className="surface_btn_mobile_overview">
+            <button className="surface_btn_mobile_overview_mercury">
               <Link className="overview_link_to_surface" to='/mercurySurface'>surface</Link>
             </button>
         </li>
@@ -46,14 +46,17 @@ const Mercury = () => {
           </div>
           <ul className="pagination_overview">
             <li className="pagination_item_overview">
-                <button autofocus className="overview_btn_overview"><p className="pagination_num_overview">01</p>overview</button>
+                <button autofocus className="overview_btn_overview_mercury"><p className="pagination_num_overview">01</p>overview</button>
             </li>
             <li className="pagination_item_overview">
-                <button className="structure_btn_overview"><p className="pagination_num_overview">02</p>
-                <Link className="overview_link_to_strucure" to='/mercuryStructure'>internal structure</Link></button>
+                <button className="structure_btn_overview_mercury"><p className="pagination_num_overview">02</p>
+                <Link className="overview_link_to_strucure" to='/mercuryStructure'>internal structure</Link>
+                </button>
             </li>
             <li className="pagination_item_overview">
-                <button className="surface_btn_overview"><p className="pagination_num_overview">03</p>surface geology</button>
+                <button className="surface_btn_overview_mercury"><p className="pagination_num_overview">03</p>
+                <Link className="overview_link_to_strucure" to='/mercurySurface'>surface geology</Link>
+                </button>
             </li>
           </ul>
         </div>

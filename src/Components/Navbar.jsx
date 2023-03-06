@@ -5,6 +5,8 @@ import "../Css/variables.css";
 import burgerImg from "../Assets/icon-hamburger.svg";
 import chevronIcon from "../Assets/icon-chevron.svg";
 
+import {Link} from "react-router-dom";
+
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -22,49 +24,49 @@ const Navbar = () => {
         <ul className={hamburgerOpen ? "nav_list_active" : "nav_list_inactive"}>
             <li className="nav_item">
                 <div className="mobile_color_circle_mercury"></div>
-                <a href="#" className="nav_link">Mercury</a>
+                <Link to='/' className="nav_link">Mercury</Link>
                 <img src={chevronIcon} alt="" className="chevron" />
             </li>
             <hr className="mobile_nav_menu_line" />
             <li className="nav_item">
                 <div className="mobile_color_circle_venus"></div>
-                <a href="#" className="nav_link">Venus</a>
+                <Link to='/venusOverview' className="nav_link">Venus</Link>
                 <img src={chevronIcon} alt="" className="chevron" />
             </li>
             <hr className="mobile_nav_menu_line" />
             <li className="nav_item">
                 <div className="mobile_color_circle_earth"></div>
-                <a href="#" className="nav_link">Earth</a>
+                <Link to='/earthOverview' className="nav_link">Earth</Link>
                 <img src={chevronIcon} alt="" className="chevron" />
             </li>
             <hr className="mobile_nav_menu_line" />
             <li className="nav_item">
                 <div className="mobile_color_circle_mars"></div>
-                <a href="#" className="nav_link">Mars</a>
+                <Link to='/marsOverview' className="nav_link">Mars</Link>
                 <img src={chevronIcon} alt="" className="chevron" />
             </li>
             <hr className="mobile_nav_menu_line" />
             <li className="nav_item">
                 <div className="mobile_color_circle_jupiter"></div>
-                <a href="#" className="nav_link">Jupiter</a>
+                <Link to='/jupiterOverview' className="nav_link">Jupiter</Link>
                 <img src={chevronIcon} alt="" className="chevron" />
             </li>
             <hr className="mobile_nav_menu_line" />
             <li className="nav_item">
                 <div className="mobile_color_circle_saturn"></div>
-                <a href="#" className="nav_link">Saturn</a>
+                <Link to='/saturnOverview' className="nav_link">Saturn</Link>
                 <img src={chevronIcon} alt="" className="chevron" />
             </li>
             <hr className="mobile_nav_menu_line" />
             <li className="nav_item">
                 <div className="mobile_color_circle_uranus"></div>
-                <a href="#" className="nav_link">Uranus</a>
+                <Link to='/uranusOverview' className="nav_link">Uranus</Link>
                 <img src={chevronIcon} alt="" className="chevron" />
             </li>
             <hr className="mobile_nav_menu_line" />
             <li className="nav_item">
                 <div className="mobile_color_circle_neptune"></div>
-                <a href="#" className="nav_link">Neptune</a>
+                <Link to='/neptuneOverview' className="nav_link">Neptune</Link>
                 <img src={chevronIcon} alt="" className="chevron" />
             </li>
         </ul>

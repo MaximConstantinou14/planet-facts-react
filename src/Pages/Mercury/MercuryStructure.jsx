@@ -13,15 +13,15 @@ const MercuryStructure = () => {
 
       <ul className="pagination_mobile_structure">
         <li className="pagination_item_mobile_structure">
-            <button autofocus className="overview_btn_mobile_structure">
+            <button autofocus className="overview_btn_mobile_structure_mercury">
               <Link className="structure_link_to_overview" to='/'>overview</Link>
             </button>
         </li>
         <li className="pagination_item_mobile_structure">
-            <button className="structure_btn_mobile_structure">structure</button>
+            <button className="structure_btn_mobile_structure_mercury">structure</button>
         </li>
         <li className="pagination_item_mobbile_structure">
-            <button className="surface_btn_mobile_structure">
+            <button className="surface_btn_mobile_structure_mercury">
               <Link className="structure_link_to_surface" to='/mercurySurface'>surface</Link>
             </button>
         </li>
@@ -46,15 +46,15 @@ const MercuryStructure = () => {
           </div>
           <ul className="pagination_structure">
             <li className="pagination_item_structure">
-                <button autofocus className="overview_btn_structure"><p className="pagination_num_structure">01</p>
+                <button autofocus className="overview_btn_structure_mercury"><p className="pagination_num_structure">01</p>
                   <Link className="structure_link_to_overview" to="/">overview</Link>
                 </button>
             </li>
             <li className="pagination_item_structure">
-                <button className="structure_btn_structure"><p className="pagination_num_structure">02</p> internal structure</button>
+                <button className="structure_btn_structure_mercury"><p className="pagination_num_structure">02</p> internal structure</button>
             </li>
             <li className="pagination_item_structure">
-                <button className="surface_btn_structure"><p className="pagination_num_structure">03</p>
+                <button className="surface_btn_structure_mercury"><p className="pagination_num_structure">03</p>
                   <Link className="structure_link_to_surface" to="/mercurySurface">surface geology</Link>
                 </button>
             </li>

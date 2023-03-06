@@ -4,16 +4,16 @@
         display: none;
     }
 
-    .mercury_structure_container{
+    .saturn_structure_container{
         background-color: var(--bg-color);
         background-image: url(../../Assets//background-stars.svg);
     }
 
-    .pagination_structure{
+    .pagination_surface{
         display: none;
     }
 
-    .pagination_mobile_structure{
+    .pagination_mobile_surface{
         position: relative;
         width: 100vw;
         background-color: var(--bg-color);
@@ -27,9 +27,9 @@
         border-bottom: 1px solid #97979783;
     }
 
-    .overview_btn_mobile_structure_mercury,
-    .structure_btn_mobile_structure_mercury,
-    .surface_btn_mobile_structure_mercury{
+    .overview_btn_mobile_surface_saturn,
+    .structure_btn_mobile_surface_saturn,
+    .surface_btn_mobile_surface_saturn{
         width: 5rem;
         background-color: transparent;
         border: none;
@@ -43,19 +43,19 @@
         cursor: pointer;
     }
 
-    .structure_btn_mobile_structure_mercury{
-        border-bottom: 5px solid var(--very-light-blue);
+    .surface_btn_mobile_surface_saturn{
+        border-bottom: 5px solid var(--brown);
         padding-top: 5px;
         color: white;
     }
 
-    .structure_link_to_overview,
-    .structure_link_to_surface{
-        color: white;
+    .surface_link_to_structure,
+    .surface_link_to_overview{
         text-decoration: none;
+        color: white;
     }
 
-    .mercury_structure{
+    .saturn_structure{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -65,6 +65,7 @@
 
     .planet_img_container{
         padding: 6.125rem 0rem;
+        position: relative;
     }
 
     .planet_img{
@@ -72,8 +73,16 @@
         height: auto;
     }
 
-    .mercury_structure_text_container,
-    .mercury_structure_text_wrapper{
+    .surface_saturn_img{
+        width: 4rem;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 22%;
+    }
+
+    .saturn_structure_text_container,
+    .saturn_structure_text_wrapper{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -82,13 +91,13 @@
         width: calc(100vw - 3rem);
     }
 
-    .mercury_title{
+    .saturn_title{
         text-transform: uppercase;
         font-weight: 400;
         font-size: 2.5rem;
     }
 
-    .mercury_structure_description{
+    .saturn_structure_description{
         text-align: center;
         font-family: "League Spartan", sans-serif;
         line-height: 1.375rem;
@@ -105,10 +114,10 @@
         margin-bottom: 5rem;
     }
 
-    .mercury_rotation,
-    .mercury_revolution,
-    .mercury_radius,
-    .mercury_temp{
+    .saturn_rotation,
+    .saturn_revolution,
+    .saturn_radius,
+    .saturn_temp{
         padding: 0px 1.5rem;
         width: 100%;
         height: 3rem;
@@ -118,10 +127,10 @@
         border: 1px solid #97979783;
     }
 
-    .mercury_rotation_title,
-    .mercury_revolution_title,
-    .mercury_radius_title,
-    .mercury_temp_title{
+    .saturn_rotation_title,
+    .saturn_revolution_title,
+    .saturn_radius_title,
+    .saturn_temp_title{
         font-family: "League Spartan", sans-serif;
         font-size: 0.5rem;
         text-transform: uppercase;
@@ -129,10 +138,10 @@
         letter-spacing: 0.0456rem;
     }
 
-    .mercury_rotation_time,
-    .mercury_revolution_time,
-    .mercury_radius_num,
-    .mercury_temp_num{
+    .saturn_rotation_time,
+    .saturn_revolution_time,
+    .saturn_radius_num,
+    .saturn_temp_num{
         font-weight: 400;
         font-size: 1.25rem;
         text-transform: uppercase;
@@ -151,19 +160,31 @@
         height: auto;
     }
 
+    .planet_img_container{
+        position: relative;
+    }
+
+    .surface_saturn_img{
+        width: 7rem;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+    }
+
     .pagination{
         display: block;
     }
 
-    .pagination_mobile_structure{
+    .pagination_mobile_surface{
         display: none;
     }
 
-    .mercury_structure_text_container{
+    .saturn_structure_text_container{
         flex-direction: row;
     }
 
-    .mercury_structure_text_wrapper{
+    .saturn_structure_text_wrapper{
         width: 21.1875rem;
         height: 12.25rem;
         display: flex;
@@ -172,11 +193,11 @@
         flex-direction: column;
     }
 
-    .mercury_structure_description{
+    .saturn_structure_description{
         text-align: left;
     }
 
-    .pagination_structure{
+    .pagination_surface{
         height: 9.5rem;
         width: 17.5625rem;
         display: flex;
@@ -186,14 +207,14 @@
         list-style: none;
     }
 
-    .pagination_item_structure{
+    .pagination_item_surface{
         width: 100%;
         height: 2.5rem;
     }
 
-    .overview_btn_structure_mercury,
-    .structure_btn_structure_mercury,
-    .surface_btn_structure_mercury{
+    .overview_btn_surface_saturn,
+    .structure_btn_surface_saturn,
+    .surface_btn_surface_saturn{
         cursor: pointer;
         width: 100%;
         height: 100%;
@@ -211,17 +232,17 @@
         padding: 0rem 1rem;
     }
 
-    .pagination_num_structure{
+    .pagination_num_surface{
         color: #97979783;
         margin-right: 1rem;
     }
 
-    .structure_btn_structure_mercury{
-        background-color: var(--very-light-blue);
+    .surface_btn_surface_saturn{
+        background-color: var(--brown);
     }
 
-    .structure_link_to_overview,
-    .structure_link_to_surface{
+    .surface_link_to_overview,
+    .surface_link_to_structure{
         text-decoration: none;
         color: white;
     }
@@ -237,10 +258,10 @@
         margin-bottom: 5rem;
     }
 
-    .mercury_rotation,
-    .mercury_revolution,
-    .mercury_radius,
-    .mercury_temp{
+    .saturn_rotation,
+    .saturn_revolution,
+    .saturn_radius,
+    .saturn_temp{
         padding: 1.5rem;
         width: 10.25rem;
         height: 100%;
@@ -251,10 +272,10 @@
         flex-direction: column;
     }
 
-    .mercury_rotation_title,
-    .mercury_revolution_title,
-    .mercury_radius_title,
-    .mercury_temp_title{
+    .saturn_rotation_title,
+    .saturn_revolution_title,
+    .saturn_radius_title,
+    .saturn_temp_title{
         font-family: "League Spartan", sans-serif;
         font-size: 0.5rem;
         text-transform: uppercase;
@@ -262,10 +283,10 @@
         letter-spacing: 0.0456rem;
     }
 
-    .mercury_rotation_time,
-    .mercury_revolution_time,
-    .mercury_radius_num,
-    .mercury_temp_num{
+    .saturn_rotation_time,
+    .saturn_revolution_time,
+    .saturn_radius_num,
+    .saturn_temp_num{
         font-weight: 400;
         font-size: 1.25rem;
         text-transform: uppercase;
@@ -275,7 +296,7 @@
 
 @media (min-width: 57.8125rem) {
 
-    .mercury_structure_container{
+    .saturn_structure_container{
         height: 130vh;
     }
 
@@ -284,32 +305,44 @@
         height: auto;
     }
 
-    .mercury_structure{
+    .planet_img_container{
+        position: relative;
+    }
+
+    .surface_saturn_img{
+        width: 10.1875rem;
+        height: 12.4375rem;
+        position: absolute;
+        top: 50%;
+        left: 22%;
+    }
+
+    .saturn_structure{
         flex-direction: row;
         width: 58.75rem;
         margin-inline: auto;
     }
 
-    .mercury_structure_text_container{
+    .saturn_structure_text_container{
         flex-direction: column;
         width: 21.875rem;
         height: 28rem;
         width: 21.875rem;
     }
 
-    .mercury_structure_text_container{
+    .saturn_structure_text_container{
         flex-direction: column;
         width: 21.875rem;
         align-items: flex-start;
     }
 
-    .mercury_structure_text_wrapper{
+    .saturn_structure_text_wrapper{
         flex-direction: column;
         width: 21.875rem;
         height: 14.3125rem;
     }
 
-    .mercury_title{
+    .saturn_title{
         font-size: 5rem;
     }
 
